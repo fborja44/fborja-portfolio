@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root {
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 0.75em;
+}
+
+.hover-underline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.hover-underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-underline:hover:before {
+  visibility: visible;
+  width: 100%;
+  background-color: black;
+}
+
+.hover-underline:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.hover-arrow img {
+  display: inline-block;
+  transition: 0.15s ease-in;
+}
+
+.hover-arrow:hover img {
+  transform: translateX(75%);
+}
+
+.fill {
+  min-height: calc(100vh - 200px);
+}
