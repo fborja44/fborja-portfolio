@@ -17,7 +17,7 @@ function App() {
 			<div id='root'>
 				<TitleBar />
 				<Routes>
-					<Route path='/' element={<Homepage />} />
+					<Route path='/fborja-portfolio' element={<Homepage />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />

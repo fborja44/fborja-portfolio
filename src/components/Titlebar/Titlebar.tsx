@@ -5,7 +5,7 @@ const TitleBar = () => {
 	return (
 		<header className='h-[100px] w-full flex flex-row justify-between items-center select-none border-b border-solid border-black'>
 			<Link
-				to='/'
+				to='/fborja-portfolio'
 				className='uppercase font-bold text-lg tracking-widerest leading-3'
 			>
 				Francis Borja{' '}
