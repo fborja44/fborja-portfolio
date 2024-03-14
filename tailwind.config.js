@@ -10,6 +10,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'league-spartan': ['"League Spartan"', 'sans'],
+				'poppins': ['"Poppins"', 'sans'],
 			},
 			letterSpacing: {
 				widerest: '.2em',

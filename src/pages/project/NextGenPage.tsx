@@ -1,6 +1,6 @@
 import StyledLink from '../../components/StyledLink/StyledLink';
 import ChapterHeader from './ChapterHeader';
-import PageSection from './PageSection';
+import PageSection from './section/PageSection';
 import ProjectPageLayout from './ProjectPageLayout';
 import Banner from '../../assets/img/banner_nextgen.png';
 import Persona1 from '../../assets/img/user1_nextgen.png';

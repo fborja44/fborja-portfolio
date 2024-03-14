@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 #root {
-	max-width: 1366px;
+	max-width: 1200px;
 	min-height: 100vh;
 	margin: 0 auto;
-	padding: 0 0.75em;
+	padding: 0 1em;
 }
 
 .hover-underline {
@@ -33,12 +33,12 @@
 .hover-underline:hover:before {
 	visibility: visible;
 	width: 100%;
-	background-color: black;
+	background-color: theme('colors.indigo.800');
 }
 
 .hover-underline:hover {
 	cursor: pointer;
-	color: black;
+	color: theme('colors.indigo.800');
 }
 
 .hover-arrow img {
@@ -52,4 +52,8 @@
 
 .fill {
 	min-height: calc(100vh - 200px);
+}
+
+.profile-shadow {
+	box-shadow: 0px 4px 100px 20px rgba(149, 191, 255, 0.75);
 }

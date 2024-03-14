@@ -1,5 +1,5 @@
 import ChapterHeader from './ChapterHeader';
-import PageSection from './PageSection';
+import PageSection from './section/PageSection';
 import ProjectPageLayout from './ProjectPageLayout';
 import Banner from '../../assets/img/banner_albumnow.png';
 import Wireframes from '../../assets/img/wireframes_albumnow.png';

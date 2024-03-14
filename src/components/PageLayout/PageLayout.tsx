@@ -1,7 +1,7 @@
 import ScrollToTop from '../Scroll/ScrollToTop';
 
 interface PageLayoutProps {
-	title: string;
+	title?: string;
 	children: React.ReactNode;
 }
 
@@ -10,9 +10,11 @@ const PageLayout = ({ children, title }: PageLayoutProps) => {
 		<>
 			<ScrollToTop />
 			<main className='py-8 fill'>
-				<div className='uppercase text-base font-bold tracking-wider'>
-					{title || 'Page Title'}
-				</div>
+				{title && (
+					<div className='uppercase text-base font-bold tracking-wider'>
+						{title}
+					</div>
+				)}
 				{children}
 			</main>
 		</>
