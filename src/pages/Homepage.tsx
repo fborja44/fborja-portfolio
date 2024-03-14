@@ -5,15 +5,12 @@ const Homepage = () => {
 	return (
 		<PageLayout title={'Homepage'}>
 			<div className='max-w-[64em]'>
-				<h1 className='py-6 uppercase text-5xl font-bold leading-tight'>
-					{/* <span className='bg-neon'> */}
-					Crafting Digital Experiences
-					{/* </span>*/} Through Thoughtful Web Applications
+				<h1 className='py-6 text-5xl font-semibold leading-tight'>
+					👋 Hey there, I’m Francis Borja!
 				</h1>
 				<p className='text-lg'>
-					Hey there, I’m Francis Borja! I’m an aspiring Front-End Engineer who
-					loves to build web apps. Take some to to take a peek at
-					some of my work below!
+					I’m an aspiring Web Developer who loves to build practical web apps. Take
+					some time to take a peek at some of my work below!
 				</p>
 			</div>
 			<ProjectCardList />
