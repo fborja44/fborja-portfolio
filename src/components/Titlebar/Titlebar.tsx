@@ -32,7 +32,7 @@ const TitleBar = () => {
 			<div className='h-[90px] px-12 max-page-width flex flex-row justify-between items-center bg-white/80 backdrop-blur'>
 				<Link
 					to='/fborja-portfolio'
-					className='uppercase font-bold text-lg tracking-wide leading-3 flex flex-row items-center gap-2'
+					className='uppercase font-bold text-lg tracking-wide leading-3 flex flex-row items-center gap-2 hover:text-indigo-700 transition-colors'
 				>
 					<FiCpu className='text-indigo-800' />
 					<span className='flex flex-row items-center'>
