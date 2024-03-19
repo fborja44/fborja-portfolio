@@ -1,4 +1,5 @@
 import { FiChevronRight } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
@@ -8,6 +9,7 @@ interface ProjectCardProps {
 	href: string;
 	gradient?: string;
 	wip?: boolean;
+	external?: boolean;
 }
 
 const ProjectCard = ({
@@ -16,11 +18,15 @@ const ProjectCard = ({
 	categories,
 	gradient,
 	href,
+	external,
 }: ProjectCardProps) => {
 	return (
 		<Link
-			className='h-30 flex flex-row justify-between items-center bg-white border border-gray-50 hover:border-blue-200 transition-colors shadow py-6 px-12 rounded-xl'
+			className={`h-30 flex flex-row justify-between items-center bg-white border border-gray-50 ${
+				href ? 'hover:border-blue-200' : 'hover:cursor-default'
+			} transition-colors shadow py-6 px-12 rounded-xl`}
 			to={href}
+			target={external ? '_blank' : ''}
 		>
 			<div className='flex flex-row items-center gap-5'>
 				<div className='rounded-full box-content border-2 border-slate-200'>
@@ -43,7 +49,15 @@ const ProjectCard = ({
 					</span>
 				</div>
 			</div>
-			<FiChevronRight className='w-6 h-6 text-slate-600 justify-self-end' />
+			{href && (
+				<span className='text-slate-600 justify-self-end'>
+					{external ? (
+						<FiExternalLink className='w-6 h-6' />
+					) : (
+						<FiChevronRight className='w-6 h-6' />
+					)}
+				</span>
+			)}
 		</Link>
 	);
 };
