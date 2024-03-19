@@ -10,6 +10,8 @@ import DigitalWireframes from '../../assets/img/nextgen/digital_wireframes_nextg
 import Desktop from '../../assets/img/nextgen/desktop_nextgen.png';
 import Tablet from '../../assets/img/nextgen/tablet_nextgen.png';
 import Mockups from '../../assets/img/nextgen/mockups_nextgen.png';
+import ImageSection from '../Image/ImageSection';
+import Image from '../Image/Image';
 
 const NextGenPage = () => {
 	return (
@@ -74,18 +76,18 @@ const NextGenPage = () => {
 					tracking features.
 				</p>
 				<p>I create two user personas based on my findings.</p>
-				<div className='flex md:flex-row flex-col gap-8'>
-					<img
+				<ImageSection>
+					<Image
 						src={Persona1}
 						alt='User Persona 1'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
-					<img
+					<Image
 						src={Persona2}
 						alt='User Persona 2'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
-				</div>
+				</ImageSection>
 			</PageSection>
 			<PageSection title='Challenges and Constraints'>
 				The biggest challenge I faced when creating my designs was translating
@@ -155,7 +157,7 @@ const NextGenPage = () => {
 			</PageSection>
 			<PageSection title='Sketches and Wireframes'>
 				<p>My initial paper wireframes can be found below.</p>
-				<img
+				<Image
 					src={PaperWireframes}
 					alt='Wireframes'
 					className='max-w-lg w-full mx-auto mt-2'
@@ -178,7 +180,7 @@ const NextGenPage = () => {
 					for an opportunity, they are shown a modal to continue to sign-up
 					process.
 				</p>
-				<img
+				<Image
 					src={DigitalWireframes}
 					alt='Wireframes'
 					className='max-w-3xl w-full mx-auto mt-2'
@@ -215,7 +217,7 @@ const NextGenPage = () => {
 			</PageSection>
 			<ChapterHeader>Refining the Design</ChapterHeader>
 			<PageSection title='Mockups'>
-				<img
+				<Image
 					src={Mockups}
 					alt='Mockups'
 					className='max-w-5xl w-full mx-auto mb-6'
@@ -253,18 +255,18 @@ const NextGenPage = () => {
 					larger card sizes, and can display more categories on the navigation
 					carousel.
 				</p>
-				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
-					<img
+				<ImageSection>
+					<Image
 						src={Desktop}
 						alt='Desktop Mockup'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
-					<img
+					<Image
 						src={Tablet}
 						alt='Tablet Mockup'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
-				</div>
+				</ImageSection>
 			</PageSection>
 			<PageSection title='Accessibility Considerations'>
 				<p>

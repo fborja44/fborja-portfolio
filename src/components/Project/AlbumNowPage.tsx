@@ -5,6 +5,7 @@ import Banner from '../../assets/img/albumnow/banner_albumnow.png';
 import Wireframes from '../../assets/img/albumnow/wireframes_albumnow.png';
 import Mockups from '../../assets/img/albumnow/mockups_albumnow.png';
 import StyledLink from '../StyledLink/StyledLink';
+import Image from '../Image/Image';
 
 const AlbumNowPage = () => {
 	return (
@@ -103,7 +104,7 @@ const AlbumNowPage = () => {
 				</p>
 			</PageSection>
 			<PageSection title='Sketches and Wireframes'>
-				<img
+				<Image
 					src={Wireframes}
 					alt='Wireframes'
 					className='max-w-lg w-full mx-auto mb-6'
@@ -157,7 +158,7 @@ const AlbumNowPage = () => {
 			</PageSection>
 			<ChapterHeader>Refining the Design</ChapterHeader>
 			<PageSection title='Mockups'>
-				<img
+				<Image
 					src={Mockups}
 					alt='Mockups'
 					className='max-w-5xl w-full mx-auto mb-6'

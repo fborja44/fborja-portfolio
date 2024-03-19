@@ -7,6 +7,7 @@ import PaperWireframe from '../../assets/img/codify/paper_wireframe_codify.png';
 import ResponsivePaperWireframe from '../../assets/img/codify/responsive_paper_wireframe_codify.png';
 import Mockups from '../../assets/img/codify/mockups_codify.png';
 import ResponsiveMockups from '../../assets/img/codify/responsive_mockups_codify.png';
+import Image from '../Image/Image';
 
 const CodifyPage = () => {
 	return (
@@ -122,7 +123,7 @@ const CodifyPage = () => {
 					After completing the initial ideation phase, I made paper wireframes
 					for each of the primary screens needed in the main user flow.
 				</p>
-				<img
+				<Image
 					src={PaperWireframe}
 					alt='Wireframes'
 					className='max-w-5xl w-full mx-auto mb-6'
@@ -131,7 +132,7 @@ const CodifyPage = () => {
 					I also completed paper wireframes for different screen size
 					variations.
 				</p>
-				<img
+				<Image
 					src={ResponsivePaperWireframe}
 					alt='Wireframes'
 					className='max-w-sm w-full mx-auto mb-6'
@@ -167,7 +168,7 @@ const CodifyPage = () => {
 			</PageSection>
 			<ChapterHeader>Refining the Design</ChapterHeader>
 			<PageSection title='Mockups'>
-				<img
+				<Image
 					src={Mockups}
 					alt='Mockups'
 					className='max-w-5xl w-full mx-auto mb-6'
@@ -200,7 +201,7 @@ const CodifyPage = () => {
 					In lieue of a top navigation bar, pages can be accessed through a pop
 					out menu by pressing the hamburger menu.
 				</p>
-				<img
+				<Image
 					src={ResponsiveMockups}
 					alt='Phone Mockup'
 					className='max-w-lg w-full mx-auto mb-6'

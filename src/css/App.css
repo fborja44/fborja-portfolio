@@ -9,9 +9,11 @@
 }
 
 #main {
+	position: static;
 	max-width: 1200px;
 	min-height: 100vh;
 	margin: 0 auto;
+	overflow-y: hidden;
 }
 
 .max-page-width {
@@ -47,15 +49,6 @@
 .hover-underline:hover {
 	cursor: pointer;
 	color: theme('colors.indigo.800');
-}
-
-.hover-arrow img {
-	display: inline-block;
-	transition: 0.15s ease-in;
-}
-
-.hover-arrow:hover img {
-	transform: translateX(75%);
 }
 
 .fill {

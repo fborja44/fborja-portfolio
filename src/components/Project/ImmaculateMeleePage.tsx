@@ -6,6 +6,8 @@ import Completed from '../../assets/img/app-screenshots/immaculate-melee/complet
 import Grid1 from '../../assets/img/app-screenshots/immaculate-melee/grid1.png';
 import Grid2 from '../../assets/img/app-screenshots/immaculate-melee/grid2.png';
 import List from './List/List';
+import ImageSection from '../Image/ImageSection';
+import Image from '../Image/Image';
 
 const ImmaculateMeleePage = () => {
 	return (
@@ -100,32 +102,34 @@ const ImmaculateMeleePage = () => {
 							external
 						>
 							RetroSSBMRank
-						</StyledLink>
-						{' '}
+						</StyledLink>{' '}
 						of 2001-2012.
 					</li>
 				</List>
 			</PageSection>
 			<PageSection title='App Preview'>
-				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
-					<img
+				<ImageSection>
+					<Image
 						src={Grid1}
 						alt='Sample Grid 1'
 						className='max-w-lg w-full mx-auto mb-6'
+						caption='Sample Grid 1'
 					/>
-					<img
+					<Image
 						src={Grid2}
 						alt='Sample Grid 2'
 						className='max-w-lg w-full mx-auto mb-6'
+						caption='Sample Grid 2'
 					/>
-				</div>
-				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
-					<img
+				</ImageSection>
+				<ImageSection>
+					<Image
 						src={Completed}
 						alt='Completed Screen'
 						className='max-w-lg w-full mx-auto mb-6'
+						caption='Game Summary that is shown when a player completes the game or runs out of lives.'
 					/>
-				</div>
+				</ImageSection>
 			</PageSection>
 		</ProjectPageLayout>
 	);

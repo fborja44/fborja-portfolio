@@ -11,8 +11,8 @@ const ProjectPageLayout = ({ children, type, title }: ProjectPageLayout) => {
 	return (
 		<PageLayout title={type}>
 			<motion.div
-				initial={{ opacity: 0, y: '5px' }}
-				animate={{ opacity: 1, y: '0px' }}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
 				transition={{ duration: 0.75, delay: 0.75 }}
 			>
 				<h1 className='my-6 uppercase text-4xl font-bold leading-tight'>

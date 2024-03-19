@@ -7,6 +7,8 @@ import Gameplay from '../../assets/img/app-screenshots/tmt/gameplay.png';
 import Automation from '../../assets/img/app-screenshots/tmt/automation.png';
 import AutomationWarning from '../../assets/img/app-screenshots/tmt/automation-warning.png';
 import MatchDashboard from '../../assets/img/app-screenshots/tmt/match-dashboard.png';
+import Image from '../Image/Image';
+import ImageSection from '../Image/ImageSection';
 
 const TMTPage = () => {
 	return (
@@ -137,25 +139,28 @@ const TMTPage = () => {
 				</List>
 			</PageSection>
 			<PageSection title='App Preview'>
-				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
-					<img
+				<ImageSection>
+					<Image
 						src={Automation}
 						alt='Automation Preview'
 						className='max-w-lg w-full mx-auto mb-6'
+						caption='Gameplay Scene Automation UI'
 					/>
-					<img
+					<Image
 						src={AutomationWarning}
 						alt='Automation Warning Preview'
 						className='max-w-lg w-full mx-auto mb-6'
+						caption='Gameplay Scene Automation UI Warning'
 					/>
-				</div>
-				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
-					<img
+				</ImageSection>
+				<ImageSection>
+					<Image
 						src={MatchDashboard}
 						alt='Match Dashboard Preview'
 						className='max-w-lg w-full mx-auto mb-6'
+						caption='Start.gg Match Dashboard'
 					/>
-				</div>
+				</ImageSection>
 			</PageSection>
 		</ProjectPageLayout>
 	);
