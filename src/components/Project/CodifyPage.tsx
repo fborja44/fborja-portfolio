@@ -2,7 +2,7 @@ import ProjectPageLayout from './ProjectPageLayout';
 import Banner from '../../assets/img/banner_codify.png';
 import ChapterHeader from './ChapterHeader';
 import PageSection from './section/PageSection';
-import StyledLink from '../../components/StyledLink/StyledLink';
+import StyledLink from '../StyledLink/StyledLink';
 import PaperWireframe from '../../assets/img/paper_wireframe_codify.png';
 import ResponsivePaperWireframe from '../../assets/img/responsive_paper_wireframe_codify.png';
 import Mockups from '../../assets/img/mockups_codify.png';

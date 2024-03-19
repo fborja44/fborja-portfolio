@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import PageLayout from '../components/PageLayout/PageLayout';
-import StyledLink from '../components/StyledLink/StyledLink';
+import PageLayout from '../PageLayout/PageLayout';
+import StyledLink from '../StyledLink/StyledLink';
 
 const Contact = () => {
 	return (

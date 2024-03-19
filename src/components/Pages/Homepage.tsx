@@ -1,16 +1,16 @@
-import Button from '../components/Button/Button';
-import PageLayout from '../components/PageLayout/PageLayout';
+import Button from '../Button/Button';
+import PageLayout from '../PageLayout/PageLayout';
 import { VscSend } from 'react-icons/vsc';
-import Token from '../components/Token/Token';
+import Token from '../Token/Token';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import ProjectList from '../components/ProjectList/ProjectList';
-import Section from '../components/Section/Section';
+import ProjectList from '../ProjectList/ProjectList';
+import Section from '../Section/Section';
 import { RiGraduationCapFill } from 'react-icons/ri';
-import DisplayCard from '../components/Card/DisplayCard';
-import Google from '../assets/img/google.png';
-import Stevens from '../assets/img/stevens.png';
-import Avatar from '../components/Avatar/Avatar';
+import DisplayCard from '../Card/DisplayCard';
+import Google from '../../assets/img/google.png';
+import Stevens from '../../assets/img/stevens.png';
+import Avatar from '../Avatar/Avatar';
 
 const Homepage = () => {
 	return (
@@ -19,6 +19,7 @@ const Homepage = () => {
 				initial={{ opacity: 0, y: '5px' }}
 				animate={{ opacity: 1, y: '0px' }}
 				transition={{ duration: 0.75, delay: 0.25 }}
+				exit={{ opacity: 0 }}
 				className='flex flex-row justify-between mb-20'
 			>
 				<div>

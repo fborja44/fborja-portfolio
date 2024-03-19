@@ -1,4 +1,4 @@
-import StyledLink from '../../components/StyledLink/StyledLink';
+import StyledLink from '../StyledLink/StyledLink';
 import ChapterHeader from './ChapterHeader';
 import PageSection from './section/PageSection';
 import ProjectPageLayout from './ProjectPageLayout';

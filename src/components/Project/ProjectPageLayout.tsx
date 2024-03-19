@@ -1,4 +1,4 @@
-import PageLayout from '../../components/PageLayout/PageLayout';
+import PageLayout from '../PageLayout/PageLayout';
 
 interface ProjectPageLayout {
 	type: 'Case Study' | 'Web App' | 'Coding';

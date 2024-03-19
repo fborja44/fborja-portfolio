@@ -1,5 +1,5 @@
-import PageLayout from '../components/PageLayout/PageLayout';
-import ProjectList from '../components/ProjectList/ProjectList';
+import PageLayout from '../PageLayout/PageLayout';
+import ProjectList from '../ProjectList/ProjectList';
 
 const Projects = () => {
 	return (

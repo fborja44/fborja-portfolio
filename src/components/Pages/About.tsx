@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import Avatar from '../components/Avatar/Avatar';
-import PageLayout from '../components/PageLayout/PageLayout';
+import Avatar from '../Avatar/Avatar';
+import PageLayout from '../PageLayout/PageLayout';
 
 const About = () => {
 	return (
