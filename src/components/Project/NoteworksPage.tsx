@@ -1,14 +1,14 @@
-import ProjectPageLayout from './ProjectPageLayout';
+import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 
-const NoteworksPage = () => {
+const NotifyPage = () => {
 	return (
 		<ProjectPageLayout
 			type='Case Study'
-			title='Noteworks — Productivity Web App'
+			title='Notify — A Simple Note Taking App'
 		>
 			<div className='italic'>Work In Progress</div>
 		</ProjectPageLayout>
 	);
 };
 
-export default NoteworksPage;
+export default NotifyPage;

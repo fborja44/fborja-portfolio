@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import TitleLink from './TitleLink';
 import { FiCpu } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const TitleBar = () => {
 	const [scrolled, setScrolled] = useState(false);
@@ -23,13 +24,12 @@ const TitleBar = () => {
 	}, []);
 
 	return (
-		// TODO: Border only on scroll
-		<header
-			className={`w-full select-none bg-white/90 transition-colors backdrop-blur z-10 fixed ${
+		<motion.header
+			className={`w-full select-none transition-colors z-10 fixed ${
 				scrolled ? 'border-b border-slate-200' : ''
 			}`}
 		>
-			<div className='h-[90px] px-12  max-page-width flex flex-row justify-between items-center '>
+			<div className='h-[90px] px-12 max-page-width flex flex-row justify-between items-center bg-white/90 backdrop-blur'>
 				<Link
 					to='/fborja-portfolio'
 					className='uppercase font-bold text-lg tracking-wide leading-3 flex flex-row items-center gap-2'
@@ -48,7 +48,7 @@ const TitleBar = () => {
 					<TitleLink href='/contact'>Contact</TitleLink>
 				</div>
 			</div>
-		</header>
+		</motion.header>
 	);
 };
 

@@ -80,7 +80,7 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 						icon={<FaRecordVinyl className='w-7 h-7 text-white' />}
 						title={'ALBUMNOW.'}
 						categories={['Mobile', 'E-Commerce', 'Branding']}
-						href={''}
+						href={'/albumnow'}
 						gradient='from-albumNowSecondary to-albumNowPrimary'
 					/>
 					<ProjectCard
@@ -88,14 +88,14 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 						title={'NextGen'}
 						categories={['Social', 'Mobile', 'Branding']}
 						gradient='from-indigo-500 to-purple-800'
-						href={''}
+						href={'/nextgen'}
 					/>
 					<ProjectCard
 						icon={<HiCode className='w-8 h-8 text-white' />}
 						title={'Codify'}
 						categories={['Web', 'Mobile', 'Responsive', 'Branding']}
 						gradient='from-yellow-200 to-lime-400'
-						href={''}
+						href={'/notify'}
 					/>
 				</div>
 			</Section>

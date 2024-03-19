@@ -24,7 +24,7 @@ function App() {
 					<Route path='/albumnow' element={<AlbumNowPage />} />
 					<Route path='/nextgen' element={<NextGenPage />} />
 					<Route path='/codify' element={<CodifyPage />} />
-					<Route path='/noteworks' element={<NoteworksPage />} />
+					<Route path='/notify' element={<NoteworksPage />} />
 				</Routes>
 				<Footer />
 			</main>

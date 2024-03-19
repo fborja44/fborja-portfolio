@@ -1,13 +1,23 @@
+import { FiExternalLink } from 'react-icons/fi';
+
 interface StyledLinkProps {
 	children: React.ReactNode;
 	href: string;
 	external?: boolean;
+	flex?: boolean;
 }
 
-const StyledLink = ({ children, href, external }: StyledLinkProps) => {
+const StyledLink = ({ children, href, external, flex }: StyledLinkProps) => {
 	return (
-		<a className='text-blue-700 hover:text-indigo-700 transition-colors' href={href} target={external ? '_blank' : ''}>
-			{children}
+		<a
+			className={`${
+				flex ? 'flex flex-row items-center' : ''
+			} w-fit text-blue-700 hover:text-indigo-700 transition-colors`}
+			href={href}
+			target={external ? '_blank' : ''}
+		>
+			<span>{children}</span>
+			<FiExternalLink className='inline ml-1' />
 		</a>
 	);
 };

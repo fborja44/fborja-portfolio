@@ -1,7 +1,7 @@
 import StyledLink from '../StyledLink/StyledLink';
 import ChapterHeader from './ChapterHeader';
 import PageSection from './section/PageSection';
-import ProjectPageLayout from './ProjectPageLayout';
+import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import Banner from '../../assets/img/banner_nextgen.png';
 import Persona1 from '../../assets/img/user1_nextgen.png';
 import Persona2 from '../../assets/img/user2_nextgen.png';
@@ -14,7 +14,7 @@ import Mockups from '../../assets/img/mockups_nextgen.png';
 const NextGenPage = () => {
 	return (
 		<ProjectPageLayout type='Case Study' title='AlbumNow — Mobile App Design'>
-			<img src={Banner} alt='banner' />
+			<img src={Banner} alt='banner' className='rounded-xl' />
 			<ChapterHeader>Project Overview</ChapterHeader>
 			<PageSection title='About the Product'>
 				<p>

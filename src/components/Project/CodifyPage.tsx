@@ -1,4 +1,4 @@
-import ProjectPageLayout from './ProjectPageLayout';
+import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import Banner from '../../assets/img/banner_codify.png';
 import ChapterHeader from './ChapterHeader';
 import PageSection from './section/PageSection';
@@ -14,7 +14,7 @@ const CodifyPage = () => {
 			type='Case Study'
 			title='Codify — Responsive Website Design'
 		>
-			<img src={Banner} alt='banner' />
+			<img src={Banner} alt='banner' className='rounded-xl' />
 			<ChapterHeader>Project Overview</ChapterHeader>
 			<PageSection title='About the Product'>
 				<p>

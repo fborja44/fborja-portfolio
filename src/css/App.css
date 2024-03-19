@@ -23,7 +23,7 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 .hover-underline:before {

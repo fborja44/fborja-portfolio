@@ -13,8 +13,12 @@ const Contact = () => {
 			>
 				<div>If you would to reach out, let's connect on LinkedIn! </div>
 				<div>
-					<StyledLink href='https://www.linkedin.com/in/francis-borja-ab05aa188/' external>
-						You can view my profile here.
+					<StyledLink
+						href='https://www.linkedin.com/in/francis-borja-ab05aa188/'
+						external
+						flex
+					>
+						View My LinkedIn
 					</StyledLink>
 				</div>
 			</motion.div>

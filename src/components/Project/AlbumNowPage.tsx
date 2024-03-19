@@ -1,6 +1,6 @@
 import ChapterHeader from './ChapterHeader';
 import PageSection from './section/PageSection';
-import ProjectPageLayout from './ProjectPageLayout';
+import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import Banner from '../../assets/img/banner_albumnow.png';
 import Wireframes from '../../assets/img/wireframes_albumnow.png';
 import Mockups from '../../assets/img/mockups_albumnow.png';
@@ -9,7 +9,7 @@ import StyledLink from '../StyledLink/StyledLink';
 const AlbumNowPage = () => {
 	return (
 		<ProjectPageLayout type='Case Study' title='AlbumNow — Mobile App Design'>
-			<img src={Banner} alt='banner' />
+			<img src={Banner} alt='banner' className='rounded-xl' />
 			<ChapterHeader>Project Overview</ChapterHeader>
 			<PageSection title='About the Product'>
 				<p>
