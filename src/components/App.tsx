@@ -14,8 +14,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
 	return (
 		<BrowserRouter>
-			<div id='root'>
-				<TitleBar />
+			<TitleBar />
+			<main id='main'>
 				<Routes>
 					<Route path='/fborja-portfolio' element={<Homepage />} />
 					<Route path='/projects' element={<Projects />} />
@@ -27,7 +27,7 @@ function App() {
 					<Route path='/noteworks' element={<NoteworksPage />} />
 				</Routes>
 				<Footer />
-			</div>
+			</main>
 		</BrowserRouter>
 	);
 }
