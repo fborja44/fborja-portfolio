@@ -1,12 +1,12 @@
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
-import Banner from '../../assets/img/banner_codify.png';
-import ChapterHeader from './ChapterHeader';
-import PageSection from './section/PageSection';
+import Banner from '../../assets/img/codify/banner_codify.png';
+import ChapterHeader from './Section/ChapterHeader';
+import PageSection from './Section/PageSection';
 import StyledLink from '../StyledLink/StyledLink';
-import PaperWireframe from '../../assets/img/paper_wireframe_codify.png';
-import ResponsivePaperWireframe from '../../assets/img/responsive_paper_wireframe_codify.png';
-import Mockups from '../../assets/img/mockups_codify.png';
-import ResponsiveMockups from '../../assets/img/responsive_mockups_codify.png';
+import PaperWireframe from '../../assets/img/codify/paper_wireframe_codify.png';
+import ResponsivePaperWireframe from '../../assets/img/codify/responsive_paper_wireframe_codify.png';
+import Mockups from '../../assets/img/codify/mockups_codify.png';
+import ResponsiveMockups from '../../assets/img/codify/responsive_mockups_codify.png';
 
 const CodifyPage = () => {
 	return (

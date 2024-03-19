@@ -39,7 +39,7 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 							'Websockets',
 							'Fluent UI',
 						]}
-						href={''}
+						href={'/project/tmt'}
 					/>
 					<ProjectCard
 						icon={<img src={SmashGrid} className='w-[22px] h-[22px]' />}
@@ -53,7 +53,7 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 							'Firebase',
 						]}
 						gradient='from-yellow-500 to-red-500'
-						href={''}
+						href={'/project/immaculate-melee'}
 					/>
 					<ProjectCard
 						icon={<img src={Notify} className='w-[22px] h-[22px]' />}
@@ -67,7 +67,8 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 							'Fluent UI',
 						]}
 						gradient='from-blue-300 to-purple-700'
-						href={''}
+						href={'https://github.com/fborja44/notify-app'}
+						external
 					/>
 				</div>
 			</Section>
@@ -80,7 +81,7 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 						icon={<FaRecordVinyl className='w-7 h-7 text-white' />}
 						title={'ALBUMNOW.'}
 						categories={['Mobile', 'E-Commerce', 'Branding']}
-						href={'/albumnow'}
+						href={'/design/albumnow'}
 						gradient='from-albumNowSecondary to-albumNowPrimary'
 					/>
 					<ProjectCard
@@ -88,14 +89,14 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 						title={'NextGen'}
 						categories={['Social', 'Mobile', 'Branding']}
 						gradient='from-indigo-500 to-purple-800'
-						href={'/nextgen'}
+						href={'/design/nextgen'}
 					/>
 					<ProjectCard
 						icon={<HiCode className='w-8 h-8 text-white' />}
 						title={'Codify'}
 						categories={['Web', 'Mobile', 'Responsive', 'Branding']}
 						gradient='from-yellow-200 to-lime-400'
-						href={'/notify'}
+						href={'/design/codify'}
 					/>
 				</div>
 			</Section>

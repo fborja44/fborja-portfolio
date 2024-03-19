@@ -29,7 +29,7 @@ const TitleBar = () => {
 				scrolled ? 'border-b border-slate-200' : ''
 			}`}
 		>
-			<div className='h-[90px] px-12 max-page-width flex flex-row justify-between items-center bg-white/90 backdrop-blur'>
+			<div className='h-[90px] px-12 max-page-width flex flex-row justify-between items-center bg-white/80 backdrop-blur'>
 				<Link
 					to='/fborja-portfolio'
 					className='uppercase font-bold text-lg tracking-wide leading-3 flex flex-row items-center gap-2'

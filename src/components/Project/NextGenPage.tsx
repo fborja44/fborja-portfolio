@@ -1,15 +1,15 @@
 import StyledLink from '../StyledLink/StyledLink';
-import ChapterHeader from './ChapterHeader';
-import PageSection from './section/PageSection';
+import ChapterHeader from './Section/ChapterHeader';
+import PageSection from './Section/PageSection';
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
-import Banner from '../../assets/img/banner_nextgen.png';
-import Persona1 from '../../assets/img/user1_nextgen.png';
-import Persona2 from '../../assets/img/user2_nextgen.png';
-import PaperWireframes from '../../assets/img/paper_wireframes_nextgen.png';
-import DigitalWireframes from '../../assets/img/digital_wireframes_nextgen.png';
-import Desktop from '../../assets/img/desktop_nextgen.png';
-import Tablet from '../../assets/img/tablet_nextgen.png';
-import Mockups from '../../assets/img/mockups_nextgen.png';
+import Banner from '../../assets/img/nextgen/banner_nextgen.png';
+import Persona1 from '../../assets/img/nextgen/user1_nextgen.png';
+import Persona2 from '../../assets/img/nextgen/user2_nextgen.png';
+import PaperWireframes from '../../assets/img/nextgen/paper_wireframes_nextgen.png';
+import DigitalWireframes from '../../assets/img/nextgen/digital_wireframes_nextgen.png';
+import Desktop from '../../assets/img/nextgen/desktop_nextgen.png';
+import Tablet from '../../assets/img/nextgen/tablet_nextgen.png';
+import Mockups from '../../assets/img/nextgen/mockups_nextgen.png';
 
 const NextGenPage = () => {
 	return (

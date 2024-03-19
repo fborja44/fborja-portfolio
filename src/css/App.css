@@ -59,7 +59,7 @@
 }
 
 .fill {
-	min-height: calc(100vh - 200px);
+	min-height: calc(100vh - 60px);
 }
 
 .profile-shadow {

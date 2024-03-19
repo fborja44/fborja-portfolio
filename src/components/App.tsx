@@ -6,10 +6,13 @@ import Projects from './Pages/Projects';
 import AlbumNowPage from './Project/AlbumNowPage';
 import CodifyPage from './Project/CodifyPage';
 import NextGenPage from './Project/NextGenPage';
-import NoteworksPage from './Project/NoteworksPage';
+import NotifyPage from './Project/NotifyPage';
 import Footer from './Footer/Footer';
 import TitleBar from './Titlebar/Titlebar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TMTPage from './Project/TMTPage';
+import ImmaculateMeleePage from './Project/ImmaculateMeleePage';
+import NotFound from './Pages/NotFound';
 
 function App() {
 	return (
@@ -21,10 +24,16 @@ function App() {
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
-					<Route path='/albumnow' element={<AlbumNowPage />} />
-					<Route path='/nextgen' element={<NextGenPage />} />
-					<Route path='/codify' element={<CodifyPage />} />
-					<Route path='/notify' element={<NoteworksPage />} />
+					<Route path='/project/tmt' element={<TMTPage />} />
+					<Route
+						path='/project/immaculate-melee'
+						element={<ImmaculateMeleePage />}
+					/>
+					<Route path='/project/notify' element={<NotifyPage />} />
+					<Route path='/design/albumnow' element={<AlbumNowPage />} />
+					<Route path='/design/nextgen' element={<NextGenPage />} />
+					<Route path='/design/codify' element={<CodifyPage />} />
+					<Route path='*' element={<NotFound />} />
 				</Routes>
 				<Footer />
 			</main>
