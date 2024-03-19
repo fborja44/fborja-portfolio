@@ -140,19 +140,19 @@ const TMTPage = () => {
 				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
 					<img
 						src={Automation}
-						alt='Desktop Mockup'
+						alt='Automation Preview'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
 					<img
 						src={AutomationWarning}
-						alt='Tablet Mockup'
+						alt='Automation Warning Preview'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
 				</div>
 				<div className='mt-6 flex lg:flex-row flex-col gap-8'>
 					<img
 						src={MatchDashboard}
-						alt='Desktop Mockup'
+						alt='Match Dashboard Preview'
 						className='max-w-lg w-full mx-auto mb-6'
 					/>
 				</div>
