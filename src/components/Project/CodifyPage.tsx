@@ -1,13 +1,13 @@
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import Banner from '../../assets/img/codify/banner_codify.png';
-import ChapterHeader from './Section/ChapterHeader';
+import ChapterHeader from './PageSection/ChapterHeader';
 import StyledLink from '../StyledLink/StyledLink';
 import PaperWireframe from '../../assets/img/codify/paper_wireframe_codify.png';
 import ResponsivePaperWireframe from '../../assets/img/codify/responsive_paper_wireframe_codify.png';
 import Mockups from '../../assets/img/codify/mockups_codify.png';
 import ResponsiveMockups from '../../assets/img/codify/responsive_mockups_codify.png';
 import Image from '../Image/Image';
-import PageSection from './Section/PageSection';
+import PageSection from './PageSection/PageSection';
 
 const CodifyPage = () => {
 	return (

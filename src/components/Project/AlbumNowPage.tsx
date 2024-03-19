@@ -1,11 +1,11 @@
-import ChapterHeader from './Section/ChapterHeader';
+import ChapterHeader from './PageSection/ChapterHeader';
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import Banner from '../../assets/img/albumnow/banner_albumnow.png';
 import Wireframes from '../../assets/img/albumnow/wireframes_albumnow.png';
 import Mockups from '../../assets/img/albumnow/mockups_albumnow.png';
 import StyledLink from '../StyledLink/StyledLink';
 import Image from '../Image/Image';
-import PageSection from './Section/PageSection';
+import PageSection from './PageSection/PageSection';
 
 const AlbumNowPage = () => {
 	return (

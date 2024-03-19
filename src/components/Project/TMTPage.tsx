@@ -1,5 +1,5 @@
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
-import ChapterHeader from './Section/ChapterHeader';
+import ChapterHeader from './PageSection/ChapterHeader';
 import StyledLink from '../StyledLink/StyledLink';
 import List from './List/List';
 import Gameplay from '../../assets/img/app-screenshots/tmt/gameplay.png';
@@ -8,7 +8,7 @@ import AutomationWarning from '../../assets/img/app-screenshots/tmt/automation-w
 import MatchDashboard from '../../assets/img/app-screenshots/tmt/match-dashboard.png';
 import Image from '../Image/Image';
 import ImageSection from '../Image/ImageSection';
-import PageSection from './Section/PageSection';
+import PageSection from './PageSection/PageSection';
 
 const TMTPage = () => {
 	return (

@@ -1,5 +1,5 @@
 import StyledLink from '../StyledLink/StyledLink';
-import ChapterHeader from './Section/ChapterHeader';
+import ChapterHeader from './PageSection/ChapterHeader';
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import Banner from '../../assets/img/nextgen/banner_nextgen.png';
 import Persona1 from '../../assets/img/nextgen/user1_nextgen.png';
@@ -11,7 +11,7 @@ import Tablet from '../../assets/img/nextgen/tablet_nextgen.png';
 import Mockups from '../../assets/img/nextgen/mockups_nextgen.png';
 import ImageSection from '../Image/ImageSection';
 import Image from '../Image/Image';
-import PageSection from './Section/PageSection';
+import PageSection from './PageSection/PageSection';
 
 const NextGenPage = () => {
 	return (
