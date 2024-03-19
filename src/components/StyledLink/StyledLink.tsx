@@ -17,7 +17,7 @@ const StyledLink = ({ children, href, external, flex }: StyledLinkProps) => {
 			target={external ? '_blank' : ''}
 		>
 			<span>{children}</span>
-			<FiExternalLink className='inline ml-1' />
+			{external && <FiExternalLink className='inline ml-1' />}
 		</a>
 	);
 };
