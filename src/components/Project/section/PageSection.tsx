@@ -1,6 +1,5 @@
 import SectionHeader from "./SectionHeader";
 
-
 interface PageSectionProps {
 	title: string;
 	children: React.ReactNode;

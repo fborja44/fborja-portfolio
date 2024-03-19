@@ -1,6 +1,5 @@
 import ProjectPageLayout from './ProjectPageLayout/ProjectPageLayout';
 import ChapterHeader from './Section/ChapterHeader';
-import PageSection from './Section/PageSection';
 import StyledLink from '../StyledLink/StyledLink';
 import Completed from '../../assets/img/app-screenshots/immaculate-melee/completed.png';
 import Grid1 from '../../assets/img/app-screenshots/immaculate-melee/grid1.png';
@@ -8,6 +7,7 @@ import Grid2 from '../../assets/img/app-screenshots/immaculate-melee/grid2.png';
 import List from './List/List';
 import ImageSection from '../Image/ImageSection';
 import Image from '../Image/Image';
+import PageSection from './Section/PageSection';
 
 const ImmaculateMeleePage = () => {
 	return (
