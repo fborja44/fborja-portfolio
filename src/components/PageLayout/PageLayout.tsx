@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import ScrollToTop from '../Scroll/ScrollToTop';
 
 interface PageLayoutProps {
@@ -11,9 +12,14 @@ const PageLayout = ({ children, title }: PageLayoutProps) => {
 			<ScrollToTop />
 			<main className='py-8 fill'>
 				{title && (
-					<div className='uppercase text-base font-bold tracking-wider'>
+					<motion.div
+						initial={{ opacity: 0, y: '5px' }}
+						animate={{ opacity: 1, y: '0px' }}
+						transition={{ duration: 0.75, delay: 0.25 }}
+						className='uppercase text-2xl font-bold mb-6'
+					>
 						{title}
-					</div>
+					</motion.div>
 				)}
 				{children}
 			</main>

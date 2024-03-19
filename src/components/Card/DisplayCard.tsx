@@ -12,7 +12,7 @@ const DisplayCard = ({ src, title, subtitle, imgClass }: DisplayCardProps) => {
 				<img src={src} className={imgClass || 'w-44 h-auto'} />
 			</div>
 			<span className='font-bold text-sm'>{title}</span>
-			<span className='text-slate-700 font-medium text-sm'>{subtitle}</span>
+			<span className='text-slate-700 font-medium text-sm mb-2'>{subtitle}</span>
 		</div>
 	);
 };

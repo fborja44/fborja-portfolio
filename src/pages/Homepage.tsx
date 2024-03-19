@@ -3,21 +3,14 @@ import PageLayout from '../components/PageLayout/PageLayout';
 import { VscSend } from 'react-icons/vsc';
 import Token from '../components/Token/Token';
 import { MdOutlineWorkOutline } from 'react-icons/md';
-import { RiGraduationCapFill, RiAppsFill } from 'react-icons/ri';
-import { MdDesignServices } from 'react-icons/md';
-import Me from '../assets/img/me.jpg';
+import { motion } from 'framer-motion';
+import ProjectList from '../components/ProjectList/ProjectList';
+import Section from '../components/Section/Section';
+import { RiGraduationCapFill } from 'react-icons/ri';
+import DisplayCard from '../components/Card/DisplayCard';
 import Google from '../assets/img/google.png';
 import Stevens from '../assets/img/stevens.png';
-import { motion } from 'framer-motion';
-import Section from '../components/Section/Section';
-import DisplayCard from '../components/Card/DisplayCard';
-import ProjectCard from '../components/Card/ProjectCard';
-import SmashVideo from '../assets/svg/smash-video.svg';
-import SmashGrid from '../assets/svg/smash-grid.svg';
-import Notify from '../assets/svg/notify.svg';
-import { FaRecordVinyl } from 'react-icons/fa';
-import { HiCode } from 'react-icons/hi';
-import { HiOutlineGlobeAmericas } from 'react-icons/hi2';
+import Avatar from '../components/Avatar/Avatar';
 
 const Homepage = () => {
 	return (
@@ -26,7 +19,7 @@ const Homepage = () => {
 				initial={{ opacity: 0, y: '5px' }}
 				animate={{ opacity: 1, y: '0px' }}
 				transition={{ duration: 0.75, delay: 0.25 }}
-				className='flex flex-row justify-between mb-14'
+				className='flex flex-row justify-between mb-20'
 			>
 				<div>
 					<div className='flex flex-row items-center gap-7'>
@@ -45,18 +38,12 @@ const Homepage = () => {
 						Let's Get In Touch
 					</Button>
 				</div>
-				<div className='mr-6 box-content bg-gradient-to-br from-cyan-500 from-10% via-indigo-500 to-pink-500 to-90% rounded-full p-1 -z-10'>
-					<img
-						src={Me}
-						className='h-56 w-56 rounded-full profile-shadow -z-10'
-					/>
-				</div>
+				<Avatar />
 			</motion.section>
 			<motion.div
 				initial={{ opacity: 0, y: '5px' }}
 				animate={{ opacity: 1, y: '0px' }}
 				transition={{ duration: 0.75, delay: 0.75 }}
-				className='flex flex-col gap-1'
 			>
 				<Section
 					icon={<RiGraduationCapFill className='w-7 h-7' />}
@@ -76,84 +63,8 @@ const Homepage = () => {
 						/>
 					</div>
 				</Section>
-				<Section
-					icon={<RiAppsFill className='w-7 h-7' />}
-					title='Software Projects'
-				>
-					<div className='flex flex-col gap-6'>
-						<ProjectCard
-							icon={<img src={SmashVideo} className='w-7 h-7' />}
-							title={'Tournament Management Tool'}
-							categories={[
-								'React',
-								'Electron',
-								'TypeScript',
-								'Node.js',
-								'Redux',
-								'Websockets',
-								'Fluent UI',
-							]}
-							href={''}
-						/>
-						<ProjectCard
-							icon={<img src={SmashGrid} className='w-[22px] h-[22px]' />}
-							title={'Immaculate Melee'}
-							categories={[
-								'React',
-								'TypeScript',
-								'MongoDB',
-								'Node.js',
-								'Express',
-								'Firebase',
-							]}
-							gradient='from-yellow-500 to-red-500'
-							href={''}
-						/>
-						<ProjectCard
-							icon={<img src={Notify} className='w-[22px] h-[22px]' />}
-							title={'Notify'}
-							categories={[
-								'React',
-								'Electron',
-								'TypeScript',
-								'Node.js',
-								'Redux',
-								'Fluent UI',
-							]}
-							gradient='from-blue-300 to-purple-700'
-							href={''}
-						/>
-					</div>
-				</Section>
-				<Section
-					icon={<MdDesignServices className='w-7 h-7' />}
-					title='Design Projects + Case Studies'
-				>
-					<div className='flex flex-col gap-6'>
-						<ProjectCard
-							icon={<FaRecordVinyl className='w-7 h-7 text-white' />}
-							title={'ALBUMNOW.'}
-							categories={['Mobile', 'E-Commerce', 'Branding']}
-							href={''}
-							gradient='from-albumNowSecondary to-albumNowPrimary'
-						/>
-						<ProjectCard
-							icon={<HiOutlineGlobeAmericas className='w-9 h-9 text-white' />}
-							title={'NextGen'}
-							categories={['Social', 'Mobile', 'Branding']}
-							gradient='from-indigo-500 to-purple-800'
-							href={''}
-						/>
-						<ProjectCard
-							icon={<HiCode className='w-8 h-8 text-white' />}
-							title={'Codify'}
-							categories={['Web', 'Mobile', 'Responsive', 'Branding']}
-							gradient='from-yellow-200 to-lime-400'
-							href={''}
-						/>
-					</div>
-				</Section>
 			</motion.div>
+			<ProjectList />
 		</PageLayout>
 	);
 };

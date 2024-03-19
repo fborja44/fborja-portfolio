@@ -18,7 +18,10 @@ const ProjectCard = ({
 	href,
 }: ProjectCardProps) => {
 	return (
-		<div className='flex flex-row justify-between items-center bg-white shadow py-6 px-12 rounded-xl'>
+		<Link
+			className='h-30 flex flex-row justify-between items-center bg-white border border-gray-50 hover:border-blue-200 transition-colors shadow py-6 px-12 rounded-xl'
+			to={href}
+		>
 			<div className='flex flex-row items-center gap-5'>
 				<div className='rounded-full box-content border-2 border-slate-200'>
 					<div className='rounded-full box-content border-2 border-white'>
@@ -41,7 +44,7 @@ const ProjectCard = ({
 				</div>
 			</div>
 			<FiChevronRight className='w-6 h-6 text-slate-600 justify-self-end' />
-		</div>
+		</Link>
 	);
 };
 

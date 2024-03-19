@@ -6,7 +6,7 @@ interface StyledLinkProps {
 
 const StyledLink = ({ children, href, external }: StyledLinkProps) => {
 	return (
-		<a className='text-blue-700' href={href} target={external ? '_blank' : ''}>
+		<a className='text-blue-700 hover:text-indigo-700 transition-colors' href={href} target={external ? '_blank' : ''}>
 			{children}
 		</a>
 	);

@@ -1,9 +1,10 @@
 import PageLayout from '../components/PageLayout/PageLayout';
+import ProjectList from '../components/ProjectList/ProjectList';
 
 const Projects = () => {
 	return (
-		<PageLayout title='Projects'>
-			<div></div>
+		<PageLayout title='My Projects'>
+			<ProjectList />
 		</PageLayout>
 	);
 };
