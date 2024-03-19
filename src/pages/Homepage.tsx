@@ -12,6 +12,12 @@ import { motion } from 'framer-motion';
 import Section from '../components/Section/Section';
 import DisplayCard from '../components/Card/DisplayCard';
 import ProjectCard from '../components/Card/ProjectCard';
+import SmashVideo from '../assets/svg/smash-video.svg';
+import SmashGrid from '../assets/svg/smash-grid.svg';
+import Notify from '../assets/svg/notify.svg';
+import { FaRecordVinyl } from 'react-icons/fa';
+import { HiCode } from 'react-icons/hi';
+import { HiOutlineGlobeAmericas } from 'react-icons/hi2';
 
 const Homepage = () => {
 	return (
@@ -39,7 +45,7 @@ const Homepage = () => {
 						Let's Get In Touch
 					</Button>
 				</div>
-				<div className='mr-6 box-content bg-gradient-to-br from-cyan-500 from-10% via-indigo-500 to-pink-500 to-90% rounded-full p-1  -z-10'>
+				<div className='mr-6 box-content bg-gradient-to-br from-cyan-500 from-10% via-indigo-500 to-pink-500 to-90% rounded-full p-1 -z-10'>
 					<img
 						src={Me}
 						className='h-56 w-56 rounded-full profile-shadow -z-10'
@@ -76,7 +82,7 @@ const Homepage = () => {
 				>
 					<div className='flex flex-col gap-6'>
 						<ProjectCard
-							icon={undefined}
+							icon={<img src={SmashVideo} className='w-7 h-7' />}
 							title={'Tournament Management Tool'}
 							categories={[
 								'React',
@@ -90,7 +96,7 @@ const Homepage = () => {
 							href={''}
 						/>
 						<ProjectCard
-							icon={undefined}
+							icon={<img src={SmashGrid} className='w-[22px] h-[22px]' />}
 							title={'Immaculate Melee'}
 							categories={[
 								'React',
@@ -104,7 +110,7 @@ const Homepage = () => {
 							href={''}
 						/>
 						<ProjectCard
-							icon={undefined}
+							icon={<img src={Notify} className='w-[22px] h-[22px]' />}
 							title={'Notify'}
 							categories={[
 								'React',
@@ -125,24 +131,24 @@ const Homepage = () => {
 				>
 					<div className='flex flex-col gap-6'>
 						<ProjectCard
-							icon={undefined}
+							icon={<FaRecordVinyl className='w-7 h-7 text-white' />}
 							title={'ALBUMNOW.'}
 							categories={['Mobile', 'E-Commerce', 'Branding']}
 							href={''}
-							gradient='from-red-500 from-30% to-lime-300 to-100%'
+							gradient='from-albumNowSecondary to-albumNowPrimary'
 						/>
 						<ProjectCard
-							icon={undefined}
+							icon={<HiOutlineGlobeAmericas className='w-9 h-9 text-white' />}
 							title={'NextGen'}
 							categories={['Social', 'Mobile', 'Branding']}
 							gradient='from-indigo-500 to-purple-800'
 							href={''}
 						/>
 						<ProjectCard
-							icon={undefined}
-							title={'Notify'}
+							icon={<HiCode className='w-8 h-8 text-white' />}
+							title={'Codify'}
 							categories={['Web', 'Mobile', 'Responsive', 'Branding']}
-							gradient='from-blue-300 to-purple-700'
+							gradient='from-yellow-200 to-lime-400'
 							href={''}
 						/>
 					</div>

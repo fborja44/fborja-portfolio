@@ -23,7 +23,7 @@ const ProjectCard = ({
 				<div className='rounded-full box-content border-2 border-slate-200'>
 					<div className='rounded-full box-content border-2 border-white'>
 						<div
-							className={`w-14 h-14 rounded-full bg-gradient-to-b ${
+							className={`flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-b ${
 								gradient || 'from-purple-500 via-red-500 to-yellow-500'
 							}`}
 						>

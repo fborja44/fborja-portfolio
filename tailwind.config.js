@@ -10,7 +10,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'league-spartan': ['"League Spartan"', 'sans'],
-				'poppins': ['"Poppins"', 'sans'],
+				poppins: ['"Poppins"', 'sans'],
 			},
 			letterSpacing: {
 				widerest: '.2em',
@@ -19,8 +19,10 @@ export default {
 				default: 'normal',
 			},
 			colors: {
-				neon: '#DBFF00'
-			}
+				neon: '#DBFF00',
+				albumNowPrimary: '#FF4100',
+				albumNowSecondary: '#DBFF00',
+			},
 		},
 	},
 	plugins: [],
