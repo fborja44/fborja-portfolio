@@ -35,7 +35,7 @@ const Homepage = () => {
 							Computer Science from Stevens Institute of Technology.
 						</p>
 					</div>
-					<Button icon={<VscSend className='w-5 h-5' />}>
+					<Button icon={<VscSend className='w-5 h-5' />} href='/contact'>
 						Let's Get In Touch
 					</Button>
 				</div>
