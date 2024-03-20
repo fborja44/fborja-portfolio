@@ -10,7 +10,7 @@ const PageLayout = ({ children, title }: PageLayoutProps) => {
 	return (
 		<>
 			<ScrollToTop />
-			<div className='py-8 px-12 pt-[100px] fill'>
+			<div className='py-8 px-6 sm:px-12 pt-[100px] fill'>
 				{title && (
 					<motion.div
 						initial={{ opacity: 0, y: '5px' }}

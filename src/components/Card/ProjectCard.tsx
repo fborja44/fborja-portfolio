@@ -22,9 +22,9 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
 	return (
 		<Link
-			className={`h-30 flex flex-row justify-between items-center bg-white border border-gray-50 ${
+			className={`h-30 flex flex-row justify-between items-center bg-white border border-gray-50 transition-colors shadow py-6 px-6 md:px-12 rounded-xl ${
 				href ? 'hover:border-blue-200' : 'hover:cursor-default'
-			} transition-colors shadow py-6 px-12 rounded-xl`}
+			}`}
 			to={href}
 			target={external ? '_blank' : ''}
 		>

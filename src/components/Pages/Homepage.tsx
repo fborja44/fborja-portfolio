@@ -20,16 +20,16 @@ const Homepage = () => {
 				animate={{ opacity: 1, y: '0px' }}
 				transition={{ duration: 0.75, delay: 0.25 }}
 				exit={{ opacity: 0 }}
-				className='flex flex-row justify-between mb-20'
+				className='flex flex-col lg:flex-row mb-12 lg:mb-20 items-center lg:justify-between'
 			>
-				<div>
-					<div className='flex flex-row items-center gap-7'>
+				<div className='flex flex-col items-center lg:items-start mb-8 lg:mb-0'>
+					<div className='flex flex-col lg:flex-row items-center gap-7'>
 						<h1 className='text-4xl font-bold'>I'm Francis Borja!</h1>
 						<Token icon={<MdOutlineWorkOutline className='w-4 h-4' />}>
 							Available For Work
 						</Token>
 					</div>
-					<div className='text-slate-800 text-lg font-normal mt-5 mb-6 w-[480px]'>
+					<div className='text-slate-800 text-lg font-normal mt-5 mb-6 md:w-[480px] text-center lg:text-left'>
 						<p>
 							I am a Software Engineer from New Jersey who gradudated with a B.S
 							Computer Science from Stevens Institute of Technology.
@@ -50,7 +50,7 @@ const Homepage = () => {
 					icon={<RiGraduationCapFill className='w-7 h-7' />}
 					title='Education And Certifications'
 				>
-					<div className='flex flex-row justify-around'>
+					<div className='flex flex-col md:flex-row md:justify-around gap-6 items-center'>
 						<DisplayCard
 							src={Stevens}
 							title={'Stevens Insitute Of Technology'}

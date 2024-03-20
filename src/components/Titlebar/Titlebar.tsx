@@ -29,10 +29,10 @@ const TitleBar = () => {
 				scrolled ? 'border-b border-slate-200' : ''
 			}`}
 		>
-			<div className='h-[90px] px-12 max-page-width flex flex-row justify-between items-center bg-white/80 backdrop-blur'>
+			<div className='h-[90px] px-6 sm:px-12 max-page-width flex flex-row justify-between items-center bg-white/80 backdrop-blur'>
 				<Link
 					to='/fborja-portfolio'
-					className='uppercase font-bold text-lg tracking-wide leading-3 flex flex-row items-center gap-2 hover:text-indigo-700 transition-colors'
+					className='uppercase font-bold text-base sm:text-lg tracking-wide leading-3 flex flex-row items-center gap-2 hover:text-indigo-700 transition-colors'
 				>
 					<FiCpu className='text-indigo-800' />
 					<span className='flex flex-row items-center'>
@@ -44,8 +44,8 @@ const TitleBar = () => {
 				</Link>
 				<div className='flex flex-row items-center'>
 					<TitleLink href='/projects'>Projects</TitleLink>
-					<TitleLink href='/about'>About Me</TitleLink>
-					<TitleLink href='/contact'>Contact</TitleLink>
+					<TitleLink href='/about'>About <span className='hidden sm:block sm:ml-1'>Me</span></TitleLink>
+					<TitleLink href='/contact' className='hidden sm:block'>Contact</TitleLink>
 				</div>
 			</div>
 		</motion.header>

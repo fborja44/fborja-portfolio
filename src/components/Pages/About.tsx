@@ -9,10 +9,10 @@ const About = () => {
 				initial={{ opacity: 0, y: '5px' }}
 				animate={{ opacity: 1, y: '0px' }}
 				transition={{ duration: 0.75, delay: 0.75 }}
-				className='py-8 flex flex-row gap-8 flex-end'
+				className='py-4 lg:py-8 flex flex-col lg:flex-row gap-8 items-center lg:flex-end lg:justify-center'
 			>
 				<Avatar />
-				<div className='max-w-2xl flex flex-col gap-4 text-slate-800'>
+				<div className='max-w-xl flex flex-col gap-4 text-slate-800'>
 					<p className='font-medium'>Hey there!</p>
 					<p>
 						I'm Francis Borja. I recently graduated from Stevens Institute of

@@ -7,7 +7,7 @@ interface DisplayCardProps {
 
 const DisplayCard = ({ src, title, subtitle, imgClass }: DisplayCardProps) => {
 	return (
-		<div className='flex flex-col gap-2 items-center rounded-xl bg-white w-96 px-6 py-4 shadow'>
+		<div className='flex flex-col gap-2 items-center rounded-xl bg-white w-full sm:w-96 px-6 py-4 shadow'>
 			<div className='flex items-center h-20'>
 				<img src={src} className={imgClass || 'w-44 h-auto'} />
 			</div>
