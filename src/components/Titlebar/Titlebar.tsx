@@ -29,15 +29,15 @@ const TitleBar = () => {
 				scrolled ? 'border-b border-slate-200' : ''
 			}`}
 		>
-			<div className='h-[90px] px-6 sm:px-12 max-page-width flex flex-row justify-between items-center bg-white/80 backdrop-blur'>
+			<div className='h-[70px] sm:h-[90px] px-6 sm:px-12 max-page-width flex flex-row justify-between items-center bg-white/80 backdrop-blur'>
 				<Link
 					to='/fborja-portfolio'
 					className='uppercase font-bold text-base sm:text-lg tracking-wide leading-3 flex flex-row items-center gap-2 hover:text-indigo-700 transition-colors'
 				>
 					<FiCpu className='text-indigo-800' />
 					<span className='flex flex-row items-center'>
-						<span>FrancisBorja</span>
-						<span className='text-slate-800 text-xs font-semibold tracking-wide relative top-[2px]'>
+						<span className='text-sm sm:text-base'>FrancisBorja</span>
+						<span className='hidden sm:block text-slate-800 text-xs font-semibold tracking-wide relative top-[2px]'>
 							.dev
 						</span>
 					</span>

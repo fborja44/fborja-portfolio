@@ -1,7 +1,7 @@
 import ProjectCard from '../Card/ProjectCard';
 import { RiAppsFill } from 'react-icons/ri';
 import { MdDesignServices } from 'react-icons/md';
-import { FaRecordVinyl } from 'react-icons/fa';
+import { FaGithub, FaRecordVinyl } from 'react-icons/fa';
 import { HiCode } from 'react-icons/hi';
 import { HiOutlineGlobeAmericas } from 'react-icons/hi2';
 import { motion } from 'framer-motion';
@@ -9,6 +9,7 @@ import SmashVideo from '../../assets/svg/smash-video.svg';
 import SmashGrid from '../../assets/svg/smash-grid.svg';
 import Notify from '../../assets/svg/notify.svg';
 import Section from '../Section/Section';
+import { TiWeatherCloudy } from 'react-icons/ti';
 
 interface ProjectListProps {
 	delay: number;
@@ -25,6 +26,16 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 			<Section
 				icon={<RiAppsFill className='w-7 h-7' />}
 				title='Software Projects'
+				info={
+					<a
+						href='https://github.com/fborja44'
+						target='_blank'
+						className='flex flex-row items-center gap-2 text-slate-500 hover:text-indigo-800 transition-colors'
+					>
+						<FaGithub className='h-6 w-6 order-first sm:order-last' />
+						<span>View My GitHub</span>
+					</a>
+				}
 			>
 				<div className='flex flex-col gap-6'>
 					<ProjectCard
@@ -54,6 +65,14 @@ const ProjectList = ({ delay }: ProjectListProps) => {
 						]}
 						gradient='from-yellow-500 to-red-500'
 						href={'/project/immaculate-melee'}
+					/>
+					<ProjectCard
+						icon={<TiWeatherCloudy className='h-8 w-8 text-white' />}
+						title={'Mobile Weather App'}
+						categories={['React Native', 'JavaScript', 'Node.js', 'Expo']}
+						gradient='from-cyan-300 to-blue-600'
+						href={'https://github.com/fborja44/weather-app'}
+						external
 					/>
 					<ProjectCard
 						icon={<img src={Notify} className='w-[22px] h-[22px]' />}
